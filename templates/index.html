@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %} Amazon product review and sentimental analysis {% endblock %}
+
+{% block content %}
+
+    <h1>Amazon product review and sentimental analysis</h1>
+    <form method="POST">
+        <label for="product" name="product">Product Name - </label>
+        <input type="text" name="product" value="{{ request.form['product'] }}">
+        <button value="Search">Search</button>
+    </form>
+
+{% endblock %}
